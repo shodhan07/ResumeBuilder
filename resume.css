@@ -1,0 +1,435 @@
+#cv-template {
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    /* text-align: center; */
+}
+
+#left {
+    display: inline-block;
+}
+
+#right {
+    /* display: inline-block; */
+    float: right;
+}
+#generateCV{
+    text-align: center;
+    margin-left: 40%;
+}
+
+.please .container {
+    /* max-width: 800px; */
+    /* margin: 0 auto; */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.please #listgalu {
+    float: right;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    gap: .6rem;
+    list-style-type: none;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.please li a {
+    display: inline-block;
+    padding: .3rem 1rem;
+    color: var(--nav-text);
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    border-radius: 36px;
+    line-height: 2;
+    transition: .3s;
+}
+
+.please li a:hover {
+    color: green;
+}
+
+.please .text {
+    text-align: center;
+}
+
+.please h1 {
+    color: #007bff;
+}
+
+.please label {
+    font-weight: bold;
+}
+
+.please input[type="text"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.please button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+.please a {
+    /* background-color: red; */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.please .preview {
+    visibility: hidden;
+}
+
+ .bottom {
+    font-size: small;
+    background-color: red;
+}
+
+.text {
+    text-align: center;
+    margin: 5% auto;
+    width: 50%;
+
+}
+
+@media (max-width:800px) {
+    .text {
+        width: 90%;
+        padding: auto 3%;
+    }
+
+    .text h6 {
+        font-size: 1rem;
+        padding-top: 5%;
+    }
+
+    .text p {
+        font-size: 1.2rem;
+        font-family: var(--font-poppins);
+        line-height: 1.1;
+    }
+
+    .text h1 {
+        font-size: 30px;
+        font-family: var(--font-poppins);
+        margin: 2% auto;
+    }
+
+    .navbar-brand {
+        font-size: 1.6rem;
+    }
+
+    hr {
+        margin-top: 100px;
+
+    }
+}
+
+@media (max-width:400px) {
+    .text {
+        width: 100%;
+        padding: auto 5%;
+    }
+
+    .text h6 {
+        font-size: 1rem;
+        padding-top: 5%;
+    }
+
+    .text p {
+        font-size: 1rem;
+        font-family: var(--font-poppins);
+        line-height: 1.1;
+    }
+
+    .text h1 {
+        font-size: 25px;
+        font-family: var(--font-poppins);
+        margin: 2% auto;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+
+.text h6 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1%;
+}
+
+.text h1 {
+    font-size: 37px;
+    font-family: var(--font-poppins);
+    margin: 2% auto;
+}
+
+.text p {
+    font-size: 1.6rem;
+    font-family: var(--font-poppins);
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+
+img {
+    float: left;
+
+}
+
+.please .container mt-3 text-center {
+    background-color: transparent;
+}
+
+.please .container-fluid {
+    background-color: red;
+    position: fixed;
+    top: 0;
+    transition: 0.6s;
+    z-index: 1;
+    width: 100%;
+}
+
+
+
+.please .navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.please .nav-item {
+    padding: 0 18px;
+    color: white;
+}
+
+.please .nav-link {
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+
+
+
+/* cv-template */
+.background {
+    background-color: blue;
+}
+
+.under {
+    float: right;
+}
+
+.container2 span {
+    font-weight: bolder;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: var(--font-poppins);
+}
+
+.container {
+    margin-bottom: 56px;
+}
+
+
+.preview-item-name {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 1.8rem 0;
+    position: relative;
+}
+
+.preview-item-name::after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    width: 50px;
+    height: 1.5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 2%;
+}
+
+.prev-deatils {
+    margin-top: 3%;
+}
+
+.links h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.08);
+    padding: 0.5rem auto;
+    margin-top: 10px;
+    font-family: var(--font-poppins);
+    color: #fff;
+
+}
+
+.imga {
+    width: 130px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3%;
+}
+
+.imga img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.back {
+    background-color: #ccc;
+}
+
+#objectiveT {
+    color: #080509;
+}
+
+.print {
+    color: #fff;
+    background-color: #52c234;
+    transition: 0.4s;
+}
+
+.print:hover {
+    background-color: #fff;
+    border: black 2px ridge;
+    color: #080509;
+    transform: scale(1.1);
+}
+
+
+.hidden {
+    display: none;
+}
+
+.prev-items {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: solid;
+}
+
+@media print {
+    .print {
+        visibility: hidden;
+    }
+}
+
+
+
+.container-fluid {
+    background-color: red;
+    position: fixed;
+    top: 0;
+    transition: 0.6s;
+    z-index: 1;
+    width: 100%;
+}
+
+footer {
+    background: red;
+    padding-top: 10px;
+    margin-top: 2%;
+
+}
+
+
+
+
+
+.footernav {
+    margin: 30px 0;
+}
+
+.footernav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footernav ul li .part {
+    margin: 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+.footernav ul li .insta {
+    padding: 10px;
+    margin: 20px;
+    color: #080509;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.footernav i {
+    font-size: 2em;
+}
+
+.footernav ul li .insta:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.footernav ul li .insta:hover i {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footernav ul li .part:hover {
+    opacity: 1;
+}
+
+.foot {
+    background-color: red;
+    padding: 1.2%;
+    text-align: center;
+    color: #fff;
+}
+
+
+@media(max-width:700px) {
+
+
+    .footernav ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footernav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+}

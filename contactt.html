@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Chakra+Petch&family=Poppins&family=Young+Serif&display=swap"
+        rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://kit.fontawesome.com/6a50e0837f.js" crossorigin="anonymous"></script>
+    <title>Resume Builder - Contact</title>
+    <style>
+       
+body{
+    background-color: black;
+    margin: 0;
+    font-family:'Poppins', sans-serif;
+    color: #fff;
+    background-image: url(shoo4.jpg);
+   
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+nav
+{
+    background: rgb(26, 45, 142);
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    
+    transition: 0.4s;
+    
+}
+
+.nav-hidden{
+   transform: translateY(-80px);
+}
+
+
+.logo img
+{   
+ width: 70px;
+ margin-right: 10px;
+
+    
+}
+nav a 
+{
+    color: #fff;
+    font-family: "Audiowide", sans-serif;
+    text-transform: uppercase;
+
+}
+
+
+
+.logo
+{
+    flex: 1;
+}
+
+.logo a
+{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+
+}
+
+
+.menu
+{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links
+{
+    list-style: none;
+    padding: 15px 20px;
+    font-size: larger;
+    
+}
+
+.nav-links:hover
+{
+    transform: scale(1.2);
+}
+
+.toggle
+{
+    display: none;
+    
+    font-size: 2rem;
+}
+
+.linkk[aria-current="page"]{
+    text-decoration: underline #3da077 0.15rem;
+    text-underline-offset: 0.5rem;
+}
+
+@media (max-width:700px) {
+    nav{
+        display: block;
+        position: fixed;
+        padding: 15px 20px;
+    }
+
+    .container h1
+    {
+        margin: 100px 3% 3% 3%;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+    }
+    .nav-links
+    {
+        width: 100%;
+        display: none;
+        text-align: center;
+    }
+
+    .toggle
+    {  
+        position: absolute;
+        display: block;
+        top: 20px;
+        right: 20px;
+        
+    }
+    .active
+    {
+        display: block;
+        
+        
+    }
+
+    .nav-hidden{
+        transform: translateY(-80px);
+    }
+}
+
+
+
+
+/* div */
+
+.container {
+    
+    width:75rem;
+    padding: 0 ;
+    margin-right: auto;
+    margin-left: auto;
+    height:auto;
+    
+}
+@media screen and (min-width: 920px) and (max-width: 1439px) {
+    .container {
+      max-width: 1279px !important;
+      padding: 0 !important;
+      margin: 0 80px !important;
+      width: auto !important;
+    }
+    .container h1{
+        margin-top:120px ;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .container {
+      max-width: 959px !important;
+      margin: 0 16px !important;
+      padding: 0 !important;
+      width: auto !important;
+    }
+    .container h1{
+        margin-top:120px ;
+    }
+  }
+
+  @media (max-width:1000px)
+  {
+    .container h1{
+        margin-top:150px ;
+    }
+  }
+
+.container h1{
+    margin: 3%;
+   margin-top: 100px;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.gradient-cards{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nav-act{
+    transform: scale(1.2);
+}
+
+.card{
+    max-width: 550px;
+    border: 0;
+    width: 100%;
+    margin-bottom:5% ;
+    
+}
+
+.container-card{
+    position: relative;
+    border: 2px solid transparent;
+    background: linear-gradient(71deg, #080509, #1a171c, #080509);
+    background-clip: padding-box;
+    border-radius: 45px;
+    padding: 40px;
+}
+
+
+
+.giphy-embed
+{
+    border: solid lime;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5%;
+}
+
+
+.title{
+    padding-bottom: 8px;
+    font-size: 1.2rem;
+    font-family: 'Young Serif', serif;
+}
+
+.container-card ul li{
+    line-height: 2;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    position:relative;
+    margin-top: 2%;
+    left:40%;
+  }
+
+  .btn:hover{
+    background-color: #5C469C;
+    transform: scale(1.1);
+    transition: transform 100ms ease-out;
+    cursor: pointer;
+  }
+
+
+  .bg-green-box::after,
+  .bg-white-box::after,
+  .bg-yellow-box::after,
+  .bg-blue-box::after,
+  .bg-red-box::after{
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    content: "";
+    z-index: -1;
+    border-radius: 45px;
+  }
+  
+  .bg-green-box::after {
+    background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
+  }
+  
+  .bg-white-box::after {
+    background: linear-gradient(71deg, #121013, #cd30ca, #121013);
+  }
+  
+  .bg-yellow-box::after {
+    background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
+  }
+  
+  .bg-blue-box::after {
+    background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
+  }
+  .bg-red-box::after{
+    background: linear-gradient(71deg, #0c0a0e, #cb351e, #0c0a0e);
+  }
+
+
+
+
+
+
+
+
+  /* contact */
+  .contact{
+    width:100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgb(15, 79, 93)),url('contact.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+   
+  }
+
+  form{
+    width: 90%;
+    max-width: 600px;
+  }
+
+.input-group
+{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color:#fff;
+    background: transparent;
+    font-size: 15px;
+}
+
+label
+{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .input-group{
+    flex-basis: 48%;
+}
+
+.send{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 50%;
+    cursor: pointer;
+    border-radius: 2px;
+    
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top:-35px;
+    font-size: 14px;
+}
+
+.send:hover{
+    background-color: #07117e;
+    transform: scale(1.03);
+}
+
+footer{
+    background: rgb(7, 108, 131);
+    
+}
+.images{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.imag{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  
+}
+.footernav{
+    margin: 30px 0;
+}
+.footernav ul{
+    display: flex;
+   justify-content: center;
+    list-style: none;
+}
+.footernav ul li .part{
+    margin: 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footernav ul li .insta{
+    padding: 10px;
+    margin: 20px;
+    color: #080509;
+    background-color:white ;
+    border-radius: 100%;  
+    opacity: 0.9f; 
+}
+
+.footernav  i{
+   font-size: 2em;
+}
+
+.footernav ul li .insta:hover{
+    background-color: #111;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.footernav ul li .insta:hover i{
+    color: #fff;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.footernav ul li .part:hover{
+    opacity: 1;
+}
+
+.foot
+{
+    background-color: rgb(18, 95, 111);
+    padding: 1.2%;
+    text-align: center;
+    opacity: 0.8;
+}
+
+@media(max-width:700px){
+
+    .footernav ul{
+        flex-direction: column;
+    }
+
+    .footernav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+
+/* animation */
+
+.reveal{
+    position: relative;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.5s ease;
+    
+}
+
+ .rev{
+    transform: translateY(0);
+    opacity: 1;
+}
+    </style>
+</head>
+
+<body>
+
+    <nav class="nav" id="navbar">
+        <div class="logo">
+        </div>
+
+        <ul class="menu">
+            <li class="nav-links">
+                <a class="linkk" href="index.html">HOME</a>
+            </li>
+            <li class="nav-links">
+                <a class="linkk" href="contactt.html">contact</a>
+            </li>
+            <li class="nav-links">
+                <a class="linkk" href="resume.html">Resume</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="contact">
+        <form action="mailto:shodhangowda07@gmail.com" enctype="text/plain">
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="name" name="NAME:" required>
+                    <label for="name"><i class="fa-solid fa-user"></i> YOUR NAME:</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="mail" name="EMAIL:" required>
+                    <label for="mail"><i class="fa-solid fa-envelope"></i> EMAIL:</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="ph" name="PH-NO:" required>
+                <label for="ph"><i class="fa-solid fa-phone"></i> PH-NO:</label>
+            </div>
+            <div class="input-group">
+                <textarea id="comm" name="COMMENT" rows="8" required></textarea>
+                <label for="comm"><i class="fa-solid fa-comment"></i> COMMENT:</label>
+            </div>
+            <button class="send" type="submit">SEND</button>
+
+        </form>
+    </div>
+    <footer>
+        <div class="bottom">
+
+            <div class="footernav">
+                <ul>
+                    <li><a class="part" href="index.html">About us</a></li>
+                    <li><a class="part" href="index.html">Policies</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <a class="insta" href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
+        <br>
+        <br>
+        <div class="foot">
+            <p>© 2023, CODING RAJA TECHNOLOGIES</p>
+        </div>
+    </footer>
+</body>
+</html>
